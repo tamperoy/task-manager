@@ -1,0 +1,99 @@
+.sidebar {
+    padding: 26px 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffffb8;
+    border: 1px solid #e1e7f0;
+    border-right: 0;
+    border-radius: 12px 0 0 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 10px 35px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo-box {
+    width: 43px;
+    height: 43px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 9px;
+    color: white;
+    background: #4142f2;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.sidebar .small-heading {
+    margin: 0 10px 16px;
+}
+
+.menu-item {
+    width: 100%;
+    padding: 11px 12px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 0;
+    border-radius: 8px;
+    color: #303e63;
+    background: transparent;
+    text-align: left;
+}
+
+.menu-item.active {
+    color: #303bf1;
+    background: #eceeff;
+}
+
+.menu-icon {
+    font-size: 19px;
+}
+
+.sidebar-bottom {
+    padding: 0 9px;
+}
+
+.motto {
+    margin: 0 0 21px;
+    padding: 21px 1px;
+    border-top: 1px solid #e3e8f0;
+    border-bottom: 1px solid #e3e8f0;
+    color: #7180a5;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    color: #344268;
+    font-size: 15px;
+}
+
+.avatar {
+    width: 39px;
+    height: 39px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    background: #68739d;
+    font-size: 14px;
+}
+
+.logout {
+    padding: 0 2px;
+    border: 0;
+    color: #344268;
+    background: transparent;
+    font-size: 15px;
+}

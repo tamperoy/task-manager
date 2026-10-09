@@ -1,14 +1,51 @@
-body{
-    font-family: roboto,arial;
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #101735;
+    background: #edf2f8;
 }
-.grey-text{
-    color: rgb(96,96,96);
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
-.big-text{
-    font-size: 30px;
-    font-weight: 900;
+
+button {
+    cursor: pointer;
 }
-.left-section{
-    line-height: 5px;
+
+.page {
+    width: calc(100% - 60px);
+    max-width: 1476px;
+    min-height: calc(100vh - 58px);
+    margin: 29px auto;
+    display: grid;
+    grid-template-columns: 230px minmax(500px, 1fr) 380px;
+}
+
+.small-heading {
+    margin: 0;
+    color: #7583a6;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.blue-button {
+    padding: 12px 17px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    background: #4142f2;
+    font-weight: 600;
+}
+
+.blue-button:hover {
+    background: #3335dc;
 }
