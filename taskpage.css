@@ -1,3 +1,19 @@
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: rgb(16, 23, 53);
+    background-color: rgb(215, 215, 255);
+}
+button {
+    cursor: pointer;
+}
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .form-title {
     display: flex;
     align-items: center;
@@ -12,18 +28,22 @@
 
 .form-title button {
     border: 0;
-    color: #273657;
+    color: rgb(39, 54, 87);
     background: transparent;
     font-size: 25px;
 }
 .new-task-card {
-    padding: 17px 15px 16px;
-    border: 1px solid #e5eaf2;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
     border-radius: 9px;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
 }
-
-
 
 .new-task-card form {
     display: flex;
@@ -45,7 +65,6 @@
 .new-task-card select {
     width: 100%;
     margin-bottom: 17px;
-    padding: 10px 12px;
     border: 1px solid #cdd6e5;
     border-radius: 7px;
     color: #172344;
@@ -56,8 +75,6 @@
 .new-task-card input,
 .new-task-card select {
     height: 39px;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 .new-task-card textarea {
@@ -72,8 +89,8 @@
 
 .form-buttons {
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
     margin-top: 2px;
 }
 
@@ -90,12 +107,15 @@
     background: white;
 }
 
-.right-panel {
-    min-width: 0;
-    padding: 16px 13px 0 28px;
-    overflow: hidden;
-    border: 1px solid #e1e7f0;
-    border-left: 0;
-    border-radius: 0 12px 12px 0;
-    background: #ffffffa8;
+.blue-button {
+    padding: 12px 17px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    background-color:rgb(65, 66, 242) ;
+    font-weight: 600;
+}
+
+.blue-button:hover {
+    background-color: rgb(51, 53, 220);
 }
